@@ -1,0 +1,31 @@
+{
+    "bind_config": {
+	"host": "127.0.0.1",
+	"port": 53535
+    },
+    "upgrade_block_lists_minutes": 5,
+    "block_lists": [
+	{
+	    "kind": "http",
+	    "location": "https://adaway.org/hosts.txt",
+	    "format": "hosts"
+	},
+	{
+	    "kind": "http",
+	    "location": "https://v.firebog.net/hosts/Easylist.txt",
+	    "format": "one per line"
+	}
+    ],
+    "resolvers": [
+	{
+	    "host": "8.8.8.8",
+	    "port": 853,
+	    "tls_hostname": "dns.google"
+	},
+	{
+	    "host": "1.1.1.1",
+	    "port": 853,
+	    "tls_hostname": "cloudflare-dns.com"
+	}
+    ]
+}
